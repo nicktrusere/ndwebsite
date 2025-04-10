@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Energy Systems</title>
+    <style>
+        /* Modern Energy Systems Styles */
+        .energy-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .energy-heading {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-align: center;
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .system-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin: 60px 0;
+        }
+
+        .system-card {
+            background: rgba(16, 24, 39, 0.8);
+            border-radius: 20px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(79, 172, 254, 0.2);
+        }
+
+        .system-card::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                transparent, 
+                rgba(79, 172, 254, 0.4),
+                transparent 30%
+            );
+            animation: borderRotate 4s linear infinite;
+        }
+
+        .system-card:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+
+        .card-content {
+            position: relative;
+            background: #0b1220;
+            border-radius: 15px;
+            padding: 25px;
+            height: 100%;
+        }
+
+        .system-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 25px;
+            filter: drop-shadow(0 0 8px rgba(79, 172, 254, 0.4));
+        }
+
+        .system-title {
+            color: #4facfe;
+            font-size: 1.8rem;
+            margin: 0 0 15px 0;
+            font-weight: 600;
+        }
+
+        .system-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .system-features li {
+            padding: 12px 0;
+            color: #e5e7eb;
+            border-bottom: 1px solid rgba(79, 172, 254, 0.1);
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .system-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00f2fe;
+            font-weight: bold;
+        }
+
+        .compliance-badge {
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
+            padding: 15px 30px;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            margin: 40px auto;
+            width: fit-content;
+        }
+
+        .badge-text {
+            color: #0b1220;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        @keyframes borderRotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .system-container {
+                grid-template-columns: 1fr;
+                max-width: 800px;
+                margin: 40px auto;
+            }
+            
+            .energy-heading {
+                font-size: 2.4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .energy-heading {
+                font-size: 2rem;
+            }
+            
+            .system-card {
+                padding: 20px;
+            }
+            
+            .card-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="energy-section">
+        <h1 class="energy-heading">ND Electrical-Training</h1>
+
+        <div class="system-container">
+            <!-- Off-Grid System -->
+            <div class="system-card">
+                <div class="card-content">
+                    <img src="/images/fences4.png" alt="Off-Grid" class="system-icon">
+                    <h3 class="system-title">Assessor & Facilitator</h3>
+                    <ul class="system-features">
+                        <li> Trade Test Unit Standards Installation Electricians</li>
+                        <li>Facilitator Installation Rules Paper 1 & 2- Installation Electricians </li>
+                        <li>Unit Standards For Electric Fence Installers.</li>
+                        <li>Facilitator Specialized Installation Rules Paper 1 & 2 </li>
+                        <li>Master Electricians Course</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hybrid System -->
+            <div class="system-card">
+                <div class="card-content">
+                    <img src="/images/solar3.png" alt="Hybrid" class="system-icon">
+                    <h3 class="system-title">Solar Installations Training</h3>
+                    <ul class="system-features">
+                        <li>Grid + Solar Integration</li>
+                        <li>Smart Energy Management</li>
+                        <li>Backup Power Supply Training</li>
+                        <li>Load Shifting Capability</li>
+                        <li>Energy Cost Optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Other Training  -->
+            <div class="system-card">
+                <div class="card-content">
+                    <img src="/images/alarms1.png" alt="Grid-Tied" class="system-icon">
+                    <h3 class="system-title">Cert & Compliance</h3>
+                    <ul class="system-features">
+                        <li>Gas Installation Training</li>
+                        <li>Electric Fence Installations</li>
+                        <li>CCTV Installations</li>
+                        <li>Alarm System Installations</li>
+                        <li>Hazardous-Locations </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="compliance-badge">
+            <p class="badge-text">Full Certification of Compliance (COC)</p>
+        </div>
+        <a href="index.html" style="display:inline-block; margin-top:30px; padding:10px 20px; background:#005c99; color:#fff; text-decoration:none; border-radius:6px;">
+            ← Go Back Home
+          </a>
+    </section>
+</body>
+</html>

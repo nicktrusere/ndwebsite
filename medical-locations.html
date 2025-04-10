@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medical Electrical Installations</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f9ff;
+      color: #1a1a1a;
+    }
+
+    .section-container {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #005c99;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .image-card {
+      flex: 1 1 300px;
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .image-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .image-card p {
+      padding: 15px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    /* Dark Mode Section */
+    .dark-section {
+      background-color: #0a0a0a;
+      padding: 80px 20px;
+      text-align: center;
+      color: #f0f0f0;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.2), 0 0 25px rgba(0, 153, 255, 0.2);
+      border-radius: 20px;
+      margin-top: 60px;
+    }
+
+    .dark-section h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      animation: flashText 2s infinite alternate;
+      margin-bottom: 20px;
+    }
+
+    .dark-section p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    @keyframes flashText {
+      0% { color: #ffffff; text-shadow: 0 0 10px #00ffff; }
+      100% { color: #ff5555; text-shadow: 0 0 12px #ff5555; }
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .dark-section h2 {
+        font-size: 2.4rem;
+      }
+
+      .dark-section p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Light Section -->
+  <div class="section-container">
+    <h2>Medical Electrical Installations & Compliance</h2>
+    <p class="subtitle">
+      Certified electrical solutions for hospitals, clinics, and healthcare facilities. Safe, reliable, and fully compliant installations for medical-grade systems and emergency power.
+    </p>
+
+    <div class="image-grid">
+      <div class="image-card">
+        <img src="/images/hospital-theater.png" alt="Hospital Electrical Wiring" />
+        <p>Advanced hospital electrical wiring designed for uninterrupted performance and safety compliance.</p>
+      </div>
+      <div class="image-card">
+        <img src="/images/hospital-theater2.png" alt="Emergency Backup Power" />
+        <p>Emergency power systems and backup generators for critical care environments and operating rooms.</p>
+      </div>
+      <div class="image-card">
+        <img src="/images/hospital3.jpg" alt="Medical Equipment Installation" />
+        <p>Precision electrical setups for sensitive medical equipment in labs, clinics, and examination rooms.</p>
+      </div>
+    </div>
+    <div class="image-grid">
+      <div class="image-card">
+        <img src="/images/access-control1.png" alt="Hospital Electrical Wiring" />
+        <p>Advanced hospital electrical wiring designed for uninterrupted performance and safety compliance.</p>
+      </div>
+      <div class="image-card">
+        <img src="/images/solar1.jpg" alt="Emergency Backup Power" />
+        <p>Emergency power systems and backup generators for critical care environments and operating rooms.</p>
+      </div>
+      <div class="image-card">
+        <img src="/images/hospitalelect.jpg" alt="Medical Equipment Installation" />
+        <p>Precision electrical setups for sensitive medical equipment in labs, clinics, and examination rooms.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dark Mode Section -->
+  <div class="dark-section">
+    <h2>Powering Critical Care with Confidence</h2>
+    <p>
+      We deliver specialized electrical systems for medical locations—hospitals, labs, and clinics—focused on emergency power, equipment safety, and full healthcare compliance. Dependable. Certified. Life-saving.
+    </p>
+  </div>
+  <a href="index.html" style="display:inline-block; margin-top:30px; padding:10px 20px; background:#005c99; color:#fff; text-decoration:none; border-radius:6px;">
+    ← Go Back Home
+  </a>
+</body>
+</html>

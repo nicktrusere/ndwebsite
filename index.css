@@ -607,7 +607,7 @@ img {
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: thin;
-    scrollbar-color: #91f113 hsl(221, 96%, 31%);
+    scrollbar-color: #427401 hsl(221, 96%, 31%);
 }
 
 .horizontal-scroll-container::-webkit-scrollbar {
